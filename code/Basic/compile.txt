@@ -1,0 +1,26 @@
+# preset before coding
+echo "cd ~/Desktop" >> ~/.bashrc
+gedit -> preference -> tab width: 4
+
+# Editor
+gedit a.cpp
+
+# Compile
+g++ a.cpp -std=c++17
+
+**All file will be compiled to a.out unless you use -o(not recommanded, just use a.out)**
+# Run
+./a.out
+
+# Run with file input
+./a.out < input.txt
+
+# Run with file input and output
+./a.out < input.txt > output.txt
+
+# Python Run
+python3 a.py < input.txt > output.txt
+
+# Copy Paste In Ubuntu
+* copy: ctrl+insert
+* paste: shift+insert
