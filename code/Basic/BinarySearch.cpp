@@ -6,6 +6,5 @@ int BinarySearch(vector<int>& nums, int target) {
         else if(target < nums[m]) r = m - 1;
         else l = m + 1;
     }
-    if(target < nums[m]) return m;
-    return m + 1;
+    return (target < nums[m] ? m: m + 1);
 }
