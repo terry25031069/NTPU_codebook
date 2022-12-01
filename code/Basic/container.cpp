@@ -33,3 +33,8 @@ myvector.insert(myvector.end(), anothervector.begin(), anothervector.end());
 ////vector erase
 myvector.erase(it first, it last);
 
+//other 
+for(auto i: &arr){
+	cout << i <<  " \n"[&i == &*arr.rbegin()];
+}
+
