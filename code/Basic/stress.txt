@@ -1,0 +1,25 @@
+# Save as test.bat, run it by "sudo ./test.bat"
+set -e
+g++ ac.cpp -o ac
+g++ wa.cpp -o wa
+for ((i=0; ; i++))
+do
+    echo "$i"
+    python3 gen.py > input
+    ./ac < input > ac.out 2> ac.err
+    ./wa < input > wa.out 2> wa.err
+    diff ac.out wa.out || break
+done
+
+# Save as gen.py
+from ramdon import *
+n = randint(0, 2**31-1)
+print(n)
+
+# Example different result of stress test
+1c1
+< 1 (ac.cpp, that run in brute-force)
+---
+> 0 (wa.cpp, that will be submitted in OJ)
+
+

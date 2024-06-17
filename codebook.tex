@@ -1,5 +1,5 @@
 \documentclass[a4paper,8pt,twocolumn,oneside]{article}
-\setlength{\columnsep}{15pt}                    %兩欄模式的間距
+\setlength{\columnsep}{5pt}                    %兩欄模式的間距
 \setlength{\columnseprule}{0pt}                 %兩欄模式間格線粗細
 
 \usepackage{amsthm}								%定義，例題
@@ -30,6 +30,10 @@
 \evensidemargin=0pt
 \hoffset=-42pt
 
+\titlespacing\section{0pt}{-2pt plus 0pt minus 2pt}{-1pt plus 0pt minus 2pt}
+\titlespacing\subsection{0pt}{-2pt plus 0pt minus 2pt}{-1pt plus 0pt minus 2pt}
+\titlespacing\subsubsection{0pt}{-2pt plus 0pt minus 2pt}{-1pt plus 0pt minus 2pt}
+
 %\renewcommand\listfigurename{圖目錄}
 %\renewcommand\listtablename{表目錄}
 
@@ -38,7 +42,7 @@
 \setmainfont{Consolas}
 %\setmonofont{Ubuntu Mono}
 \setmonofont{Consolas}
-\setCJKmainfont{Noto Sans CJK TC}
+\setCJKmainfont{Noto Sans TC}
 \XeTeXlinebreaklocale "zh"						%中文自動換行
 \XeTeXlinebreakskip = 0pt plus 1pt				%設定段落之間的距離
 \setcounter{secnumdepth}{3}						%目錄顯示第三層

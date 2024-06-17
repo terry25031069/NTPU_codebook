@@ -1,5 +1,5 @@
 # preset before coding
-echo "cd ~/Desktop" >> ~/.bashrc
+echo "cd ~/Desktop" >> ~/.bashrc (optional)
 gsettings set org.gnome.gedit.preferences.editor insert-spaces true
 gsettings set org.gnome.gedit.preferences.editor tabs-size 4
 
@@ -7,16 +7,11 @@ gsettings set org.gnome.gedit.preferences.editor tabs-size 4
 gedit a.cpp
 
 # Compile
-g++ a.cpp -std=c++17
+alias g++='g++ -std=c++17 -fsanitize=undefined -Wall -Wextra -Wshadow'
 
-**All file will be compiled to a.out unless you use -o(not recommanded, just use a.out)**
 # Run
 ./a.out
-
-# Run with file input
 ./a.out < input.txt
-
-# Run with file input and output
 ./a.out < input.txt > output.txt
 
 # Python Run

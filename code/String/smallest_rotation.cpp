@@ -12,4 +12,3 @@ string mcp(string s){
   int ans = i < n ? i : j;
   return s.substr(ans, n);
 }
-Contact GitHub API Training Shop Blog About
