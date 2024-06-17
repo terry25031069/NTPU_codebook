@@ -1,6 +1,7 @@
 # preset before coding
 echo "cd ~/Desktop" >> ~/.bashrc
-gedit -> preference -> tab width: 4
+gsettings set org.gnome.gedit.preferences.editor insert-spaces true
+gsettings set org.gnome.gedit.preferences.editor tabs-size 4
 
 # Editor
 gedit a.cpp
