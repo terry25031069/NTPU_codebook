@@ -7,7 +7,7 @@ gsettings set org.gnome.gedit.preferences.editor tabs-size 4
 gedit a.cpp
 
 # Compile
-alias g++='g++ -std=c++17 -fsanitize=undefined -Wall -Wextra -Wshadow'
+alias g++='g++ -std=c++20 -fsanitize=undefined -Wall -Wextra -Wshadow'
 
 # Run
 ./a.out

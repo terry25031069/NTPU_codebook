@@ -8,7 +8,6 @@ inline char readchar() {
 	if(p == q && (q = (p=buf)+fread(buf,1,S,stdin)) == buf) return EOF;
 	return *p++;
 }
-
 inline int nxtint() {
 	// if readchar can't use, change readchar() to getchar()
 	int x = 0, neg = 0, c = readchar();
