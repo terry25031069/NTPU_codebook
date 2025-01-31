@@ -42,7 +42,7 @@
 \setmainfont{Consolas}
 %\setmonofont{Ubuntu Mono}
 \setmonofont{Consolas}
-\setCJKmainfont{Noto Sans TC}
+\setCJKmainfont{Noto Sans TC Regular}
 \XeTeXlinebreaklocale "zh"						%中文自動換行
 \XeTeXlinebreakskip = 0pt plus 1pt				%設定段落之間的距離
 \setcounter{secnumdepth}{3}						%目錄顯示第三層
@@ -75,6 +75,7 @@
     stringstyle=\itshape\color{Green4},
 }
 
+\usepackage{multicol} 
 
 \begin{document}
 \pagestyle{fancy}
@@ -85,8 +86,10 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\contentsname}{Contents}
 
+\begin{multicols}{2}
 \scriptsize
 \tableofcontents
+\end{multicols}
 \input{content.tex}
 
 \end{document}
